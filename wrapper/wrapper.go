@@ -59,6 +59,12 @@ func Nuclei(url string, url_list string, json_value bool, tables bool) {
 		fmt.Println("Error running nuclei")
 	}
 
+	if !(json_value || tables) {
+		fmt.Println(string(out))
+		os.Exit(0)
+
+	}
+
 	json_changes := "[" + strings.Replace(string(out), "}\n{", "},\n{", -1) + "]"
 
 	// Converting in json formate with indentation
@@ -72,9 +78,11 @@ func Nuclei(url string, url_list string, json_value bool, tables bool) {
 	if err != nil {
 		panic(err)
 	}
+
 	if json_value {
 		fmt.Println(string(jsonForm))
 	}
+
 	// For genrating the tables
 	if tables {
 		var items []Data

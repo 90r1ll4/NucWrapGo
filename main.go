@@ -49,8 +49,6 @@ func main() {
 	flagSet.SetDescription("Wrapper For Nuclei")
 	flagSet.StringVarP(&opt.url, "url", "u", "", "url to scan")
 	flagSet.StringVarP(&opt.urlFile, "url_file", "f", "", "list of urls")
-	flagSet.StringVarP(&opt.output, "output", "o", "", "Output in text form[tables][json]")
-	// flagSet.StringVarP(&opt.outputFile, "output File", "of", opt.outputFile, "Output file name")
 	flagSet.BoolVarP(&opt.json, "json", "", false, "Output in json form")
 	flagSet.BoolVarP(&opt.tables, "tables", "", false, "Output in table form")
 	if err := flagSet.Parse(); err != nil {
