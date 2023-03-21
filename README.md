@@ -19,7 +19,7 @@ To use the Nucwrap, you can run it with the following command:
 ▶ go build -o nucwrapgo main.go
 ```
 
-##Usage
+### Usage
 ```bash
 Wrapper For Nuclei
 
