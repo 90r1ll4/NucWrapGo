@@ -39,7 +39,7 @@ type Data struct {
 func Nuclei(url string, url_list string, json_value bool, tables bool) {
 
 	//adding timer
-	ctx, cancel := context.WithTimeout(context.Background(), 80*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Second)
 	defer cancel()
 	argstr := []string{}
 	if url != "" {
@@ -48,7 +48,7 @@ func Nuclei(url string, url_list string, json_value bool, tables bool) {
 		argstr = append(argstr, "-ul", url_list)
 	}
 
-	if json_value {
+	if json_value || tables {
 		argstr = append(argstr, "--json")
 	}
 
@@ -72,9 +72,9 @@ func Nuclei(url string, url_list string, json_value bool, tables bool) {
 	if err != nil {
 		panic(err)
 	}
-
-	fmt.Println(string(jsonForm))
-
+	if json_value {
+		fmt.Println(string(jsonForm))
+	}
 	// For genrating the tables
 	if tables {
 		var items []Data
@@ -86,7 +86,7 @@ func Nuclei(url string, url_list string, json_value bool, tables bool) {
 		table := tablewriter.NewWriter(os.Stdout)
 		table.SetHeader([]string{"Template-Id", "Name", "Host", "Type", "severity"})
 		for i := range items {
-			row := []string{items[i].Template, items[i].Info.Name, items[i].Host, items[i].Type, items[i].Info.Severity}
+			row := []string{items[i].TemplateID, items[i].Info.Name, items[i].Host, items[i].Type, items[i].Info.Severity}
 			table.Append(row)
 		}
 		table.Render()
