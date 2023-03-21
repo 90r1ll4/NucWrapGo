@@ -1,4 +1,4 @@
-module exgo
+module nucwrapgo
 
 go 1.19
 
