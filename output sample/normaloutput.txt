@@ -1,0 +1,19 @@
+[apache-detect] [http] [info] http://scanme.nmap.org [Apache/2.4.7 (Ubuntu)]
+[options-method] [http] [info] http://scanme.nmap.org [POST,OPTIONS,GET,HEAD]
+[http-missing-security-headers:x-frame-options] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:referrer-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:clear-site-data] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:content-security-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:x-content-type-options] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-allow-origin] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-expose-headers] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-max-age] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-allow-headers] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:permissions-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-allow-credentials] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:access-control-allow-methods] [http] [info] http://scanme.nmap.org
+[http-missing-security-headers:strict-transport-security] [http] [info] http://scanme.nmap.org

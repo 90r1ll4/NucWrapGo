@@ -1,0 +1,32 @@
+[
+	{
+		"curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1866.237 Safari/537.36' 'http://scanme.nmap.org'",
+		"extracted-results": [
+			"Apache/2.4.7 (Ubuntu)"
+		],
+		"host": "http://scanme.nmap.org",
+		"info": {
+			"author": [
+				"philippedelteil"
+			],
+			"description": "Some Apache servers have the version on the response header. The OpenSSL version can be also obtained",
+			"name": "Apache Detection",
+			"reference": null,
+			"severity": "info",
+			"tags": [
+				"tech",
+				"apache"
+			]
+		},
+		"ip": "45.33.32.156",
+		"matched-at": "http://scanme.nmap.org",
+		"matched-line": null,
+		"matcher-status": true,
+		"template": "technologies/apache/apache-detect.yaml",
+		"template-id": "apache-detect",
+		"template-path": "/home/deadshot/nuclei-templates/technologies/apache/apache-detect.yaml",
+		"template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/apache/apache-detect.yaml",
+		"timestamp": "2023-03-21T11:24:09.620401077+05:30",
+		"type": "http"
+	}
+]

@@ -1,0 +1,22 @@
+   +-------------------------------+-------------------------------+------------------------+------+----------+
+   |          TEMPLATE-ID          |             NAME              |          HOST          | TYPE | SEVERITY |
+   +-------------------------------+-------------------------------+------------------------+------+----------+
+   | apache-detect                 | Apache Detection              | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   | http-missing-security-headers | HTTP Missing Security Headers | http://scanme.nmap.org | http | info     |
+   +-------------------------------+-------------------------------+------------------------+------+----------+
